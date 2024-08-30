@@ -1,5 +1,7 @@
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
 }
 
 .App-logo {
@@ -35,4 +37,132 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+body {
+  font-family: Montserrat, "Source Sans 3", sans-serif;
+}
+
+#watch-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+#watch-img {
+  width: 600px;
+}
+
+#watch-overlay {
+  display: flex;
+  font-size: 32px;
+  font-weight: bold;
+  line-spacing: 1.5;
+  flex-direction: column;
+  justify-content: space-around;
+  z-index: 10;
+  position: relative;
+  color: white;
+  width: 150px;
+  left: -370px;
+}
+
+#heart-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 10;
+  position: relative;
+  left: -337px;
+}
+
+#heart-img {
+  margin-left: auto;
+  margin-right: auto;
+  color: red;
+  font-size: 60px;
+}
+
+#rate {
+  font-size: 24px;
+  font-weight: 600;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  color: white;
+}
+
+#desc-wrapper {
+  potition: absolute;
+  zindex: 100;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+.label {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.watch-img-btn {
+  height: 70px;
+  width: 60px;
+  padding: 10px, 15px;
+  border: none;
+  border-radius: 6px;
+  margin-right: 20px;
+  border: 3px solid white;
+  border-radius: 6px;
+}
+
+.watch-img-btn.selected {
+  border: 3px solid rgb(33, 138, 131);
+  border-radius: 6px;
+}
+
+#black-btn {
+  background-color: #23211f;
+}
+
+#red-btn {
+  background-color: #ca3d22;
+}
+
+#blue-btn {
+  background-color: #565681;
+}
+
+#purple-btn {
+  background-color: #8a5362;
+}
+
+#pink-btn {
+  background-color: #e9c7be;
+}
+
+.display-btn {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  width: 140px;
+  margin-right: 10px;
+  background-color: lightgray;
+  border-radius: 6px;
+  border: none;
+}
+
+.display-btn.selected {
+  background-color: darkgray;
+  color: white;
+}
+
+#buy-btn {
+  background-color: rgb(33, 138, 131);
+  border: none;
+  border-radius: 6px;
+  padding: 10px 30px;
+  margin-top: 40px;
+  font-size: 20px;
+  color: white;
 }
